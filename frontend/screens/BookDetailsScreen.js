@@ -31,7 +31,7 @@ const BookDetailsScreen = ({ route, navigation }) => {
                 if (book.key) {
                     const olid = book.key.split('/').pop();
                     const bookDetails = await bookService.getBookDetails(olid);
-                    console.log('Book details:', bookDetails); // For debugging
+                    console.log('Book details:', bookDetails); // This is for debugging
                     setDetails(bookDetails);
                 }
             } catch (error) {
